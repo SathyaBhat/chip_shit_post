@@ -11,10 +11,6 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y ruby
-    apt-get install -y screen
-    apt-get install -y htop
-    apt-get install -y git
-    apt-get install -y vim
+    apt-get install -y ruby screen htop git vim ruby2.3 ruby2.3-dev build-essential
   SHELL
 end
